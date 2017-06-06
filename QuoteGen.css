@@ -1,0 +1,57 @@
+body {
+	background-color: #EAF7FA;
+	text-align: center;
+	font-family: "Annie Use Your Telescope";
+}
+
+#quoteSpace {
+	background-color: #91D2D0;
+	width: 500px;
+	height: 240px;
+	margin-top: 120px;
+	border-radius: 10px;
+}
+
+#quote {
+	height: 120px;
+	font-size: 30px;
+	margin-top: 15px;
+}
+
+#info {
+	margin-top: -10px;
+	margin-bottom: 20px;
+	padding-right: 10px;
+	text-align: right;
+	line-height: 50%;
+	font-size: 16px;
+	font-style: italic;
+}
+
+#song-name {
+	font-style: normal;
+}
+
+#song-name:visited {
+	text-decoration: none;
+}
+
+#title {
+	text-align: right;
+	font-size: 16px;
+}
+
+#actions {
+	display: inline-block;
+	float: none;
+	margin-bottom: -15px;
+	width: 475px;
+}
+
+#twitter-share-button {
+	background-color: #EAF7FA;
+}
+
+#twIcon {
+	font-size: 1.25em;
+}

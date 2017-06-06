@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">		
+		<title>Verse Vetter</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 	 	
+		<link rel="stylesheet" type="text/css" href="QuoteGen.css">
+		<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="QuoteGen.js"></script>	
+
+	</head>
+	<body>
+
+		<div id="quoteSpace" class="container-fluid">
+			<div id=quote>
+				<p>Quote goes here</p>
+			</div>
+
+			<div id="info">
+				<p id="singer">Singer goes here</p>
+				<p><a id="song-name" href="" target="_blank">Track Name goes here</a></p>
+			</div>
+
+			<div class="row" id="actions">
+
+				<div class="col-sm-2">
+					<a href="https://twitter.com/intent/tweet?text=Lyrics%20Here" target="_blank" id="twitter-share-button" class="btn" role="button">
+						<i class="fa fa-twitter" id="twIcon" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="col-sm-2"></div>
+
+				<div class="col-sm-4">
+					<button class="btn btn-block btn-primary" id="next">Another One</button>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="music-player">
+			<br>
+		    <button id="play" class="btn">Play</button>
+		    <button id="pause" class="btn">Pause</button>
+		    <button id="restart" class="btn">Restart</button>
+		</div>		
+		
+	</body>
+</html>
