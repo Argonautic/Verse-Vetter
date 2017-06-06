@@ -105,8 +105,6 @@ var quotes = [
 	},
 ];
 
-j = 0;
-
 $(() => {		
 
 	var audioElement = document.createElement('audio');
@@ -133,14 +131,12 @@ $(() => {
 		}
 
 		var i = Math.floor(Math.random() * a.length);
-		//console.log("i is " + i);
 		var rndSong = a.splice(i, 1)[0];
 
 		$("#quote").html(rndSong.lyrics);		
 		$("#singer").html('- ' + rndSong.singer);
 		$("#song-name").html(rndSong.song);
 		$("#song-name").attr("href", rndSong.spotLink);
-		//console.log(a.toString());
 
 		if ($('#quote')[0].scrollHeight >  $('#quote')[0].clientHeight) {
 			var scaledFontSize = Math.floor(30 * ($('#quote')[0].clientHeight / $('#quote')[0].scrollHeight)) + 'px';
@@ -161,7 +157,6 @@ $(() => {
 		$("#next").click(() => {
 			$("#next").off();
 			nextQuote(a)			
-			console.log(j++);
 		});
 	}
 
