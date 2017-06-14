@@ -110,15 +110,9 @@ $(() => {
 	var audioElement = document.createElement('audio');
 	audioElement.volume = 0.1;
     
-    $('#play').click(function()    {	audioElement.play();	});    
-    $('#pause').click(function()   {	audioElement.pause();	});    
-    $('#restart').click(function() {	audioElement.currentTime = 0;	});
-
-	function getRandomInt(min, max) {
-		min = Math.ceil(min);
-	 	max = Math.floor(max);
-  		return Math.floor(Math.random() * (max - min)) + min;
-	}	
+        $('#play').click(() => {    audioElement.play();	});    
+        $('#pause').click(() => {    audioElement.pause();	});    
+        $('#restart').click(() => {    audioElement.currentTime = 0;	});	
 
 	function nextQuote(a) {
 		if ($('#quote').css("font-size") != '30px') {
